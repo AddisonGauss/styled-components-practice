@@ -1,13 +1,120 @@
-body {
+* {
+  box-sizing: border-box;
+  text-align: center;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f6f6f6;
+  background: #f6f6f6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  height: 100%;
+}
+
+.card-img-top {
+  border-radius: 4px;
+  background: #fff;
+  color: #666;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card-img-top:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card-body {
+  max-height: 71px;
+  text-align: center;
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-text {
+  margin-top: 10px;
+}
+
+.mt--4 {
+  margin-top: 16px;
+}
+/* .cb-centermode {
+  margin-bottom: 20px;
+  display: block;
+}
+.cb-centermode input {
+  margin-right: 7px;
+} */
+
+/* .slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+} */
+
+.slick-slide *:focus {
+  outline: none;
+}
+
+.slick-prev {
+  top: 50%;
+  left: -10px !important;
+  z-index: 1;
+  color: #fff !important;
+}
+.slick-next {
+  top: 50%;
+  right: 40px !important;
+
+  z-index: 1;
+
+  @media screen and(max-width: 400px) {
+    font-size: 24px !important;
+  }
+}
+
+.slick-next,
+.slick-prev {
+  color: #fff !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  position: absolute;
+  color: #000 !important;
+  font-size: 48px !important;
+
+  @media screen and (max-width: 400px) {
+    font-size: 24px !important;
+  }
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
 }
