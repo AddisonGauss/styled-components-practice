@@ -12,6 +12,7 @@ export const AdvertisementSectionContainer = styled.div`
 
   @media screen and (max-width: 900px) {
     height: 100%;
+    min-height: 725px;
   }
 `
 export const AdvertisementSectionWrapper = styled.div`
